@@ -1,0 +1,9 @@
+{
+  "views": {
+    "home-view": {
+      "title": "Главная"
+    }
+  },
+  "components": {},
+  "ui": {}
+}
