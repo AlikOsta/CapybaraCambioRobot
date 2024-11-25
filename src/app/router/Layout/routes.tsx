@@ -1,5 +1,5 @@
-import { RouteItem } from "@models"
-import { HomeView } from "@views"
+import { RouteItem } from '@models'
+import { HomeView } from '@views'
 
 const routes: RouteItem[] = [
   {
