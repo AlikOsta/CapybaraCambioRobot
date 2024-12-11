@@ -1,9 +1,13 @@
 {
-  "views": {
-    "home-view": {
-      "title": "Inicio"
+  "views": {},
+  "components": {
+    "exchange-box": {
+      "give-label": "Doy",
+      "get-label": "Consigo",
+      "city-label": "Ciudad",
+      "select-currency-text": "Seleccione la moneda",
+      "select-city-text": "Seleccione ciudad"
     }
   },
-  "components": {},
   "ui": {}
 }

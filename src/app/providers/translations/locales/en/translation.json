@@ -1,9 +1,13 @@
 {
-  "views": {
-    "home-view": {
-      "title": "Home"
+  "views": {},
+  "components": {
+    "exchange-box": {
+      "give-label": "Give",
+      "get-label": "Get",
+      "city-label": "City",
+      "select-currency-text": "Select currency",
+      "select-city-text": "Select city"
     }
   },
-  "components": {},
   "ui": {}
 }

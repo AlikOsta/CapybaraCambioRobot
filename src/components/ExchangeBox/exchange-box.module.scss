@@ -1,0 +1,18 @@
+.exchange-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(51, 51, 51, 1);
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 9px;
+  flex-direction: column;
+  text-align: center;
+}
+
+// temporary
+.give,
+.get,
+.city {
+  width: 100%;
+  margin-bottom: 8px;
+}

@@ -1,9 +1,13 @@
 {
-  "views": {
-    "home-view": {
-      "title": "Главная"
+  "views": {},
+  "components": {
+    "exchange-box": {
+      "give-label": "Отдаю",
+      "get-label": "Получаю",
+      "city-label": "Город",
+      "select-currency-text": "Выберите валюту",
+      "select-city-text": "Выберите город"
     }
   },
-  "components": {},
   "ui": {}
 }

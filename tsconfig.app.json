@@ -22,6 +22,8 @@
       "@providers/*": ["./src/app/providers/*"],
       "@router": ["./src/app/router"],
       "@router/*": ["./src/app/router/*"],
+      "@services": ["./src/app/services"],
+      "@services/*": ["./src/app/services/*"],
       "@store": ["./src/app/store"],
       "@store/*": ["./src/app/store/*"],
       "@styles": ["./src/app/styles"],
