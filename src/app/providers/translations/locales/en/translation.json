@@ -7,6 +7,24 @@
       "city-label": "City",
       "select-currency-text": "Select currency",
       "select-city-text": "Select city"
+    },
+    "exchange-offers": {
+      "loading": "Loading...",
+      "offers-info": {
+        "title": "Exchange {{give}} to {{get}} in {{city}}",
+        "verified-exchanger": "Verified exchanger",
+        "delivery": "Home delivery"
+      },
+      "offers-list": {
+        "no-offers": {
+          "title": "No suitable exchange offers available at the moment!",
+          "contact-me-text": "If you want to place your exchange with us or report a bug 👇",
+          "contact-me-btn-text": "Contact Me"
+        },
+        "offers-list-item": {
+
+        }
+      }
     }
   },
   "ui": {}

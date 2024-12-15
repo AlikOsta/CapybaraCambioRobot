@@ -1,0 +1,31 @@
+.offers-list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(51, 51, 51, 1);
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 9px;
+  flex-direction: column;
+  text-align: center;
+
+  .lane-wrapper {
+    padding: 0 10px 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+
+  .exchanger-wrapper {
+    display: flex;
+    gap: 4px;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--tg-theme-hint-color, #b5b5b5);
+  }
+}

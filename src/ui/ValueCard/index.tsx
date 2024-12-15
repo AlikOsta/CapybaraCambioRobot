@@ -5,8 +5,8 @@ interface ValueCardProps {
   id: string
   text: string
   imgSrc?: string
-  onClick: () => void
-  onErrorImg: string
+  onClick?: () => void
+  onErrorImg?: string
   disabled?: boolean
 }
 
@@ -33,7 +33,7 @@ const ValueCard: FC<ValueCardProps> = ({
               alt={text}
               style={{ width: '50px', height: '50px' }}
               onError={(e) => {
-                (e.target as HTMLImageElement).src = onErrorImg
+                (e.target as HTMLImageElement).src = onErrorImg as string
               }}
             />
           )}

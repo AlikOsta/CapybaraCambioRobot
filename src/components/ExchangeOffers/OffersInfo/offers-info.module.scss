@@ -1,0 +1,43 @@
+.give-get-wrapper {
+  display: flex;
+  gap: 10px;
+  background-color: rgba(51, 51, 51, 1);
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.back-to-pair-selection-btn {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 33px;
+  border-radius: 25px;
+  border: 2px solid var(--tg-theme-secondary-bg-color, #333);
+  background-color: rgb(246, 255, 95);
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.exchanger-legend {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .legend-wrapper {
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.p {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

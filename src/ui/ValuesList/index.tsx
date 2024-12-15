@@ -19,9 +19,9 @@ const ValuesList: FC<ValuesListProps> = ({
           key={value}
           id={`value_${value}`}
           text={value}
-          imgSrc={`./assets/images/${value}.png`}
+          imgSrc={value ? `./assets/images/${value}.png` : undefined}
           onClick={() => onSelect(value)}
-          onErrorImg="./assets/images/argentina.png"
+          onErrorImg='./assets/images/argentina.png'
         />
       ))}
     </div>

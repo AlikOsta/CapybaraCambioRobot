@@ -7,6 +7,24 @@
       "city-label": "Ciudad",
       "select-currency-text": "Seleccione la moneda",
       "select-city-text": "Seleccione ciudad"
+    },
+    "exchange-offers": {
+      "loading": "Cargando...",
+      "offers-info": {
+        "title": "Cambiar {{give}} a {{get}} en {{city}}",
+        "verified-exchanger": "Intercambiador verificado",
+        "delivery": "Entrega a domicilio"
+      },
+      "offers-list": {
+        "no-offers": {
+          "title": "No hay ofertas de intercambio adecuadas disponibles en este momento!",
+          "contact-me-text": "Si quieres realizar tu intercambio con nosotros o reportar un error 👇",
+          "contact-me-btn-text": "Contacta Me"
+        },
+        "offers-list-item": {
+
+        }
+      }
     }
   },
   "ui": {}

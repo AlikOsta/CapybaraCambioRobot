@@ -97,8 +97,8 @@ const ExchangeAppProvider: FC<{ children: ReactNode }> = ({ children }) => {
               Delivery: rowData.Delivery,
               TG_url: rowData.TGurl,
               Logo_url: rowData.Logourl,
-              Premium: rowData.Premium === 'true',
-              Verification: rowData.Verification === 'true',
+              Premium: rowData.Premium,
+              Verification: rowData.Verification,
             })
           }
         }

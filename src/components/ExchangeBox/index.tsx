@@ -1,6 +1,7 @@
 import styles from './exchange-box.module.scss'
-import { FC, useContext, useState } from 'react'
+import { FC, useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router'
 import { ExchangeAppContext } from '@providers/context'
 
 import { Modal, ValueCard, ValuesList } from '@ui'
@@ -10,6 +11,7 @@ interface ExchangeBoxProps {}
 const ExchangeBox: FC<ExchangeBoxProps> = () => {
   const { t } = useTranslation()
   const tPath = 'components.exchange-box'
+  const navigate = useNavigate()
   const {
     giveCurrency,
     getCurrency,
@@ -64,6 +66,14 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
     handleCloseModal()
   }
 
+  useEffect(() => {
+    setValuesList([])
+  }, [])
+
+  useEffect(() => {
+    if (giveCurrency && getCurrency && city) navigate('/rates')
+  }, [giveCurrency, getCurrency, city])
+
   return (
     <div className={styles['exchange-box']}>
       <div className={styles['give']}>
@@ -73,7 +83,7 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
           text={giveCurrency || t(`${tPath}.select-currency-text`)}
           imgSrc={giveCurrency ? `./assets/images/${giveCurrency}.png` : undefined}
           onClick={() => handleCurrencyClick('give')}
-          onErrorImg="./assets/images/argentina.png"
+          onErrorImg='./assets/images/argentina.png'
         />
       </div>
 
@@ -84,7 +94,7 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
           text={getCurrency || t(`${tPath}.select-currency-text`)}
           imgSrc={getCurrency ? `./assets/images/${getCurrency}.png` : undefined}
           onClick={() => handleCurrencyClick('get')}
-          onErrorImg="./assets/images/argentina.png"
+          onErrorImg='./assets/images/argentina.png'
           disabled={!giveCurrency}
         />
       </div>
@@ -96,7 +106,7 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
           text={city || t(`${tPath}.select-city-text`)}
           imgSrc={city ? `./assets/images/${city}.png` : undefined}
           onClick={() => handleCurrencyClick('city')}
-          onErrorImg="./assets/images/argentina.png"
+          onErrorImg='./assets/images/argentina.png'
           disabled={!getCurrency}
         />
       </div>

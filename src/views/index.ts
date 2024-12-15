@@ -1,1 +1,2 @@
-export { HomeView } from './HomeView'
+export { ExchangePairSelectionView } from './ExchangePairSelectionView'
+export { ExchangeRatesView } from './ExchangeRatesView'

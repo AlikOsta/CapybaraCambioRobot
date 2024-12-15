@@ -24,6 +24,11 @@ h3 {
   padding: 8px;
 }
 
+p {
+  font-size: 0.875em;
+  color: var(--tg-theme-accent-text-color, white);
+}
+
 a {
   text-decoration: none;
   color: var(--tg-theme-destructive-text-color, rgb(246, 255, 95));
