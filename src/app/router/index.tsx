@@ -15,6 +15,6 @@ const router = createBrowserRouter(createRoutesFromElements(
       }
     </Route>
   </>
-), { basename: '/capybara-cambio-robot/' })
+), { basename: '/CapybaraCambioRobot/' })
 
 export { router, routes }
