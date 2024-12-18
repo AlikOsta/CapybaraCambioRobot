@@ -79,7 +79,6 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
       <div className={styles['give']}>
         <h2>{ t(`${tPath}.give-label`) }:</h2>
         <ValueCard
-          id="select_give"
           text={giveCurrency || t(`${tPath}.select-currency-text`)}
           imgSrc={giveCurrency ? `./assets/images/${giveCurrency}.png` : undefined}
           onClick={() => handleCurrencyClick('give')}
@@ -90,7 +89,6 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
       <div className={styles['get']}>
         <h2>{ t(`${tPath}.get-label`) }:</h2>
         <ValueCard
-          id="select_get"
           text={getCurrency || t(`${tPath}.select-currency-text`)}
           imgSrc={getCurrency ? `./assets/images/${getCurrency}.png` : undefined}
           onClick={() => handleCurrencyClick('get')}
@@ -102,7 +100,6 @@ const ExchangeBox: FC<ExchangeBoxProps> = () => {
       <div className={styles['city']}>
         <h2>{ t(`${tPath}.city-label`) }:</h2>
         <ValueCard
-          id="select_city"
           text={city || t(`${tPath}.select-city-text`)}
           imgSrc={city ? `./assets/images/${city}.png` : undefined}
           onClick={() => handleCurrencyClick('city')}

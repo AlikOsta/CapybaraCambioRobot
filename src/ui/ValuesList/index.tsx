@@ -17,7 +17,6 @@ const ValuesList: FC<ValuesListProps> = ({
       {list.map((value) => (
         <ValueCard
           key={value}
-          id={`value_${value}`}
           text={value}
           imgSrc={value ? `./assets/images/${value}.png` : undefined}
           onClick={() => onSelect(value)}

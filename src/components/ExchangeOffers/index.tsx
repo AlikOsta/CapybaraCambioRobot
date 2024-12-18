@@ -39,11 +39,11 @@ const ExchangeOffers: FC<ExchangeOffersProps> = () => {
       findExchangeRate(giveCurrency, getCurrency, city)
         .then((results) => {
           const ascendingPairs = new Set([
-            "RUB_USDT",
-            "RUB_USD",
-            "ARS_USDT",
-            "ARS_USD",
-            "ARS_RUB",
+            'RUB_USDT',
+            'RUB_USD',
+            'ARS_USDT',
+            'ARS_USD',
+            'ARS_RUB',
           ])
 
           const currencyPair = `${giveCurrency}_${getCurrency}`
@@ -54,9 +54,9 @@ const ExchangeOffers: FC<ExchangeOffersProps> = () => {
             results.sort((a, b) => parseFloat(b.Price) - parseFloat(a.Price))
           }
 
-          setOffers(results);
+          setOffers(results)
         })
-        .catch((err) => console.error("Ошибка поиска:", err))
+        .catch((err) => console.error('Ошибка поиска:', err))
         .finally(() => setLoading(false))
     }
   }, [giveCurrency, getCurrency, city, findExchangeRate])

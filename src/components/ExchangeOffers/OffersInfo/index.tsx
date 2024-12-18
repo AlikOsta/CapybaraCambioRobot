@@ -28,13 +28,11 @@ const OffersInfo: FC<OffersInfoProps> = ({
       <div className={styles['offers-info']}>
         <div className={styles['give-get-wrapper']}>
           <ValueCard
-            id='give_currency'
             text={giveCurrency || ''}
             imgSrc={giveCurrency ? `./assets/images/${giveCurrency}.png` : undefined}
             onErrorImg='./assets/images/argentina.png'
           />
           <ValueCard
-            id='get_currency'
             text={getCurrency || ''}
             imgSrc={getCurrency ? `./assets/images/${getCurrency}.png` : undefined}
             onErrorImg='./assets/images/argentina.png'

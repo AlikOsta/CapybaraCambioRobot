@@ -30,22 +30,22 @@ const OffersListItem: FC<OffersListItemProps> = ({
           {logoURL && (
             <img
               src={`${logoURL}`}
-              alt="logo"
+              alt='logo'
               style={{
-                width: "35px",
-                height: "35px",
+                width: '35px',
+                height: '35px',
 
-                borderRadius: "50%",
+                borderRadius: '50%',
               }}
             />
           )}
           <h3>{exchangerTitle}</h3>
         </div>
-        {verification === "on" && (
+        {verification === 'on' && (
           <img
-            src="./assets/images/verified.png"
-            alt="Verified"
-            style={{ width: "35px", height: "35px" }}
+            src='./assets/images/verified.png'
+            alt='Verified'
+            style={{ width: '35px', height: '35px' }}
           />
         )}
       </div>
@@ -54,11 +54,11 @@ const OffersListItem: FC<OffersListItemProps> = ({
 
       <div className={styles['lane-wrapper']}>
         <h2>{rateText}</h2>
-        {delivery === "on" && (
+        {delivery === 'on' && (
           <img
-            src="./assets/images/delivery.png"
-            alt="Delivery"
-            style={{ width: "35px", height: "35px" }}
+            src='./assets/images/delivery.png'
+            alt='Delivery'
+            style={{ width: '35px', height: '35px' }}
           />
         )}
       </div>
