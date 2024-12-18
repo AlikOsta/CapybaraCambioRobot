@@ -11,7 +11,11 @@ export default defineConfig({
     tsconfigPaths(),
     mkcert(),
   ],
-  base: "/CapybaraCambioRobot/",
+  server: {
+    host: '192.168.0.225',
+    port: 3000,
+  },
+  base: '/CapybaraCambioRobot/',
   css: {
     preprocessorOptions: {
       scss: {
